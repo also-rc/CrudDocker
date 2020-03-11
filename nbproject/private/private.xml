@@ -2,12 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/home/exkapp/Documents/NetbeansProject/CrudDocker/src/cruddocker/GuiGeneral.java</file>
-            <file>file:/home/exkapp/Documents/NetbeansProject/CrudDocker/src/cruddocker/GuiEmpleado.java</file>
-            <file>file:/home/exkapp/Documents/NetbeansProject/CrudDocker/src/cruddocker/DaoEmpleado.java</file>
-            <file>file:/home/exkapp/Documents/NetbeansProject/CrudDocker/src/cruddocker/Main.java</file>
-            <file>file:/home/exkapp/Documents/NetbeansProject/CrudDocker/src/cruddocker/Empleado.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

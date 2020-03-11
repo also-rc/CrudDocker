@@ -1,9 +1,13 @@
 package cruddocker;
 
-/**
- *
- * @author exkapp
- */
+/*
+/*Autor: Carlos Alonso Escamilla Rocafuerte
+/*Fecha de modificación: 05/Marzo/2020
+/*Descripción: Clase Empleado que contiene sólo atributos, métodos get y set 
+/*para manipular es estado de los mismos, en el contexto del sistema cada 
+/*atributo de esta clase representa un campo de la tabla empleados, por
+/*lo tanto nos servirá para realizar los registros
+*/
 public class Empleado {
     
     private int id;

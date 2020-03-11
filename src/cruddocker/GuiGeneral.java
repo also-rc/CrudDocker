@@ -2,11 +2,15 @@ package cruddocker;
 
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author exkapp
- */
+/*
+/*Autor: Carlos Alonso Escamilla Rocafuerte
+/*Fecha de modificación: 05/Marzo/2020
+/*Descripción: Clase abstracta tipo gui que contiene los elementos necesarios para 
+/*implementarla en cualquier sistema que coincida con el contexto actual. 
+/*
+*/
 public abstract class GuiGeneral extends javax.swing.JInternalFrame {
+    //Variable para definir cómo queremos que se muestre una tabla 
      protected DefaultTableModel modelo;
      
     /**
@@ -185,47 +189,47 @@ public abstract class GuiGeneral extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_txtApellidoActionPerformed
 
     private void btnInsertActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertActionPerformed
-        insert();
-        clean();
+        insertRecord();
+        cleanTextFields();
     }//GEN-LAST:event_btnInsertActionPerformed
 
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
-        update();
-        clean();
+        updateRecord();
+        cleanTextFields();
     }//GEN-LAST:event_btnUpdateActionPerformed
 
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
-        delete();
-        clean();
+        deleteRecord();
+        cleanTextFields();
     }//GEN-LAST:event_btnDeleteActionPerformed
 
     private void btnReadOneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReadOneActionPerformed
         resetTable();
-        readOne();
-        clean();
+        readOneRecord();
+        cleanTextFields();
     }//GEN-LAST:event_btnReadOneActionPerformed
 
     private void ReadAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReadAllActionPerformed
         resetTable();
-        readAll();
-        clean();
+        readAllRecords();
+        cleanTextFields();
     }//GEN-LAST:event_ReadAllActionPerformed
-
-    private void clean(){
+    //Método que limpia los campos de texto tras ocuparlos
+    private void cleanTextFields(){
         txtId.setText("");
         txtNombre.setText("");
         txtApellido.setText("");
     }
-    
+    //Método que limpia visualmente la tabla
     private void resetTable(){
         modelo.setRowCount(0);
     }
-    
-    protected abstract void insert();
-    protected abstract void update();
-    protected abstract void delete();
-    protected abstract void readOne();
-    protected abstract void readAll();
+    //Métodos abstractos que serán implementados por las clases que hereden de eśta
+    protected abstract void insertRecord();
+    protected abstract void updateRecord();
+    protected abstract void deleteRecord();
+    protected abstract void readOneRecord();
+    protected abstract void readAllRecords();
     
     
 
